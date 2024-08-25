@@ -79,7 +79,6 @@ function echo_info {
 
 # Run the functions in sequence
 colors
-logo
 echo -e "Stopping the container, cleaning unnecessary files, and updating"
 cleanup
 update

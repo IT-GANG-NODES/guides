@@ -15,7 +15,6 @@ function install_ufw {
 function read_sepolia_rpc {
   if [ ! $RPC_URL ]; then
   echo -e "Enter the https URL of your RPC Sepolia. - https://sepolia.infura.io/v3/YOUR_KEY"
-  line_1
   read RPC_URL
   fi
 }
@@ -23,7 +22,6 @@ function read_sepolia_rpc {
 function read_private_key {
   if [ ! $WAKU_PRIVATE_KEY ]; then
   echo -e "Enter your private ETH wallet that has at least 0.1 ETH in the Sepolia network"
-  line_1
   read WAKU_PRIVATE_KEY
   fi
 }
@@ -31,7 +29,6 @@ function read_private_key {
 function read_pass {
   if [ ! $WAKU_PASS ]; then
   echo -e "Enter (create) a password"
-  line_1
   read WAKU_PASS
   fi
 }
@@ -75,7 +72,6 @@ function echo_info {
   echo -e "${RED}   http://$ip_address:3004/d/yns_4vFVk/nwaku-monitoring \n ${NORMAL}"
 }
 
-logo
 read_sepolia_rpc
 read_private_key
 read_pass
