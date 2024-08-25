@@ -75,30 +75,17 @@ function echo_info {
   echo -e "${RED}   http://$ip_address:3004/d/yns_4vFVk/nwaku-monitoring \n ${NORMAL}"
 }
 
-colors
-line_1
 logo
-line_2
 read_sepolia_rpc
-line_2
 read_private_key
-line_2
 read_pass
-line_2
 echo -e "Installing tools, ufw, docker"
-line_1
 install_tools
 install_ufw
 install_docker
-line_1
 echo -e "Clone the repository, prepare env and register rln"
-line_1
 git_clone
 setup_env
-line_1
 echo -e "Launching docker containers for waku"
-line_1
 docker_compose_up
-line_2
 echo_info
-line_2

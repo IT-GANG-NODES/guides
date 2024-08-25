@@ -79,17 +79,10 @@ function echo_info {
 
 # Run the functions in sequence
 colors
-line_1
 logo
-line_2
 echo -e "Stopping the container, cleaning unnecessary files, and updating"
-line_1
 cleanup
 update
-line_1
 echo -e "Starting docker containers for Waku"
-line_1
 docker_compose_up
-line_2
 echo_info
-line_2
